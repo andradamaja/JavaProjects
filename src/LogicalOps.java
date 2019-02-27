@@ -62,7 +62,8 @@ public class LogicalOps {
     public String switchInputNumber(int x){
 
         switch (x){
-            case 0: return "0"; break; //unreachable statement? de ce?
+            case 0: return "0"; break;
+            //unreachable statement? de ce?
             case 1: return "1"; break;
             case 2: return "2"; break;
             case 3: return "3"; break;
