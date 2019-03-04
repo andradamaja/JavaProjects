@@ -6,10 +6,16 @@ public class Print {
 
     }
 
-    public String printSum() {
+    public String printSumSevenEight() {
 
         return "The addition of 7 and 8 is: " + (7 + 8);
 
+    }
+
+    //    11.Se cisteste un numar, sa se afiseze valoarea numarului citit.
+
+    public void printNumber(int x){
+        System.out.println(x);
     }
 
     public String printOps(){
@@ -50,4 +56,5 @@ public class Print {
                 "  +-----+\n";
 
     }
+
 }
