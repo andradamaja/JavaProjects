@@ -1,18 +1,9 @@
-public class DogFood {
-
-    private String brand;
+public class DogFood extends Food{
 
     private String type; //wet or dry
 
     private String meat; //lamb, chicken, duck, etc.
 
-    public void setBrand(String brand){
-        this.brand = brand;
-    }
-
-    public String getBrand(){
-        return brand;
-    }
 
     public void setType(String type){
         this.type = type;

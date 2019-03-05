@@ -1,151 +1,60 @@
-public class Dog {
-
-    private String name;
-
-    private byte age;
-
-    private float weight;
-
-    private String breed;
-
-    private String color;
-
-
-    public void setName(String name){
-        this.name =name;
-    }
-
-    public String getName(){
-        return name;
-    }
-
-    public void setAge(byte age){
-        this.age = age;
-    }
-
-    public byte getAge(){
-        return age;
-    }
-
-    public void setWeight(float weight){
-        this.weight = weight;
-    }
-
-    public float getWeight(){
-        return weight;
-    }
-
-    public void setBreed(String breed){
-        this.breed = breed;
-    }
-
-    public String getBreed(){
-        return breed;
-    }
-
-    public void setColor(String color){
-        this.color = color;
-    }
-
-    public String getColor(){
-        return color;
-    }
+public class Dog extends Animal{
 
     //BEHAVIORS:
 
-    public String run(){
-
-        return "The dog is running.";
-
+    public void run(){
+        System.out.println("runs ");
     }
 
-    public String wagTail(){
-
-        return "The dog is happy and wagging its tail.";
-
+    public void wagTail(){
+        System.out.println("wags its tail ");
     }
 
-    public String eatFood(){
-
-        return "The dog is eating.";
-
+    public void fetchBall(){
+        System.out.println("retrieves the ball to owner ");
     }
 
-    public String fetchBall(){
-
-        return "The dog retrieves the ball to the owner.";
-
+    public void bark(){
+        System.out.println("barks ");
     }
 
-    public String bark(){
-
-        return "The dog is barking.";
-
+    public void wince(){
+        System.out.println("shrinks back with fear ");
     }
 
-    public String wince(){
-
-        return "The dog shrinks back with fear.";
-
+    public void growl(){
+        System.out.println("growls threateningly ");
     }
 
-    public String growl(){
-
-        return "The dog growls threateningly.";
-
+    public void kiss(){
+        System.out.println("gives human a kiss ");
     }
 
-    public String kiss(){
-
-        return "The dog gives the human a kiss.";
-
+    public void scratch(){
+        System.out.println("scratches itself ");
     }
 
-    public String scratch(){
-
-        return "The dog scratches itself.";
-
+    public void sniff(){
+        System.out.println("sniffs ");
     }
 
-    public String sniff(){
-
-        return "The dog is sniffing the ground.";
-
+    public void sit(){
+        System.out.println("sits ");
     }
 
-    public String pottyBreak(){
-
-        return "The dog answers nature's call. :)";
-
+    public void stay(){
+        System.out.println("waits for owner's next command ");
     }
 
-    public String drinkWater(){
-
-        return "The dog drinks water.";
-
+    public void rollOver(){
+        System.out.println("rolls over ");
     }
 
-    public String sit(){
-
-        return "The dog sits.";
-
+    public void tugLeash(){
+        System.out.println("pulls on the leash ");
     }
 
-    public String stay(){
-
-        return "The dog waits for the owner's next command.";
-
-    }
-
-    public String rollOver(){
-
-        return "The dog rolls over.";
-
-    }
-
-    public String tugLeash(){
-
-        return "The dog is pulling on the leash.";
-
+    public void howl(){
+        System.out.println("howls ");
     }
 }
