@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class Dog extends Animal{
 
     //BEHAVIORS:
@@ -10,8 +12,8 @@ public class Dog extends Animal{
         System.out.println("wags its tail ");
     }
 
-    public void fetchBall(){
-        System.out.println("retrieves the ball to owner ");
+    public void fetchToy(){
+        System.out.println("retrieves the toy to owner ");
     }
 
     public void bark(){
@@ -56,5 +58,9 @@ public class Dog extends Animal{
 
     public void howl(){
         System.out.println("howls ");
+    }
+
+    public void chewToy(){
+        System.out.println("chews its toy ");
     }
 }

@@ -1,4 +1,8 @@
+package Calculator;
+
 public class LogicalOps {
+
+    // Given two numbers, see which one is the greatest and print it
 
     public int checkGreatest(int x, int y){
 
@@ -9,7 +13,10 @@ public class LogicalOps {
         }
     }
 
-    public String checkFastTrack(String s){
+    // Given a text input, if it is “FastTrack”, then print “Learning text comparison”. If not, print
+    // “Got to try some more”
+
+    public String checkInputFastTrack(String s){
 
         if (s.contains("FastTrack")){
             return "Learning text comparison";
@@ -19,12 +26,20 @@ public class LogicalOps {
         }
     }
 
+    // Given a number, if it’s equal to or higher than 2 and equal to or lower than 8, print the
+    //number
+
     public void checkTwoEight(int x){
 
         if ((x >= 2 ) && (x <= 8)){
             System.out.println(x);;
         }
     }
+
+    // Given a text input and a number input, if the text is equal to “FastTrack” AND the
+    // number is equal to or lower than 3, print the text and the number. If the text is not
+    // “FastTrack” AND the number is equal to or higher than 4, print the number and the
+    // text, in this order.
 
     public String checkFastTrackThree(String s, int x){
 
@@ -35,6 +50,9 @@ public class LogicalOps {
         }
     }
 
+    // Given a number input, if it is higher than 8 OR equal to 6, print “The amount of snow
+    // this winter was(cm):” and the given number. Else print “The forecast snow is(cm):”
+
     public String checkSnowForecast(int x){
 
         if ((x > 8) || (x == 6)){
@@ -43,6 +61,11 @@ public class LogicalOps {
             return "The forecast snow is (cm): " + x + "\"";
         }
     }
+
+    // Given a number input, if the number is greater than 3 but not equal to 4, print “The
+    // number is greater than 3 and not equal to 4”. Else if the number is equal to 4 print
+    // ”The number is equal to 4”. Else if the number is lower than 3 print “The number is
+    // lower than 3”
 
     public void checkThreeFour(int x) {
 
@@ -54,6 +77,9 @@ public class LogicalOps {
             System.out.println("The number is lower than 3");
         }
     }
+
+    // If the user pressed number keys( from 0 to 9), the program will tell the number that is
+    // pressed, otherwise, program will show "Not allowed”. (use a switch case for this)
 
     public void switchZeroNine(int x){
 
@@ -83,7 +109,9 @@ public class LogicalOps {
         }
     }
 
-    public boolean checkIfEven(int x){
+    // Write a Java program to determine whether an input number is an even number
+
+    public boolean checkIfEvenInput(int x){
 
         if (x % 2 == 0){
             return true;
@@ -91,6 +119,10 @@ public class LogicalOps {
             return false;
         }
     }
+
+    // Write Java program to allow the user to input his/her age. Then the program will show
+    // if the person is eligible to vote. A person who is eligible to vote must be older than or
+    // equal to 18 years old.
 
     public boolean checkIfVoteEligible(int x){
 
@@ -100,6 +132,8 @@ public class LogicalOps {
             return false;
         }
     }
+
+    // Find the greatest number from 3 given numbers.
 
     public int checkGreatest(int x, int y, int z){
 
@@ -147,12 +181,25 @@ public class LogicalOps {
         }
     }
 
+    // Se citesc trei numere, sa se afiseze minimul si maximul.
+
     public void printMinAndMax(int x, int y, int z){
         System.out.println(checkMin(x, y, z) + " " + checkGreatest(x, y,z));
     }
 
+    // Se citesc doua numere, sa se ordoneze crescator.
+
     public void orderLowestToHighest(int x, int y){
         System.out.println(checkMin(x, y) + " " + checkGreatest(x, y));
+    }
+
+    // Given a number, while the number is equal to or lower than 100, print the number.
+
+    public void countToHundred(int x){
+
+        for (int i = x; i < 100; i++){
+            System.out.println(i);;
+        }
     }
 
     // count backwards from given number to lower given number
@@ -170,6 +217,15 @@ public class LogicalOps {
         }
     }
 
+    // Write a Java program by using two for loops to produce the output shown below:
+    //*******
+    //******
+    //*****
+    //****
+    //***
+    //**
+    //*
+
     public void printTopDownAsterisk(){
 
         for (int i = 1; i <= 7; i++){
@@ -180,7 +236,8 @@ public class LogicalOps {
         }
     }
 
-    // Write a program called SumAndAverage to produce the sum of 1, 2, 3, ..., to 100. Also compute and display the average.
+    // Write a program called SumAndAverage to produce the sum of 1, 2, 3, ..., to 100. Also compute
+    // and display the average.
 
     public void sumAverageHundred(){
 
@@ -247,7 +304,8 @@ public class LogicalOps {
         System.out.println(suma + " average: " + suma/50);
     }
 
-    //Write a program to sum those numbers from 1 to 100 that are divisible by 7, and compute the average.
+    //Write a program to sum those numbers from 1 to 100 that are divisible by 7, and compute
+    // the average.
 
     public void sumDivBySevenAverageHundred(){
 
@@ -268,9 +326,9 @@ public class LogicalOps {
 
         int x1 = 0;
         int x2 = 1;
-        int fib = 0;
+        int fib;
         System.out.print(x1 + " " + x2 + " ");
-        for (int i = 3; i <= 20; i++){ // primele 2 pozitii: 0, 1 ==> i = 3
+        for (int i = 2; i < 20; i++){ // primele 2 pozitii: 0, 1 ==> i = 2
             fib = x1 + x2;
             System.out.print(fib + " ");
             x1 = x2;
@@ -325,5 +383,84 @@ public class LogicalOps {
 
     }
 
+    // Define and write the values of an array indices, so that the values of the arrays should
+    // start from 1 and count to 100; Print the progress in the console;
+
+    public int[] printArrayFromOneToHundred(){
+        int[] arr = new int[100];
+
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = i + 1;
+        }
+
+        return arr;
+    }
+
+    // Write a Java program to calculate the average value of array elements.
+
+    public float getAverageOfArray(int[] arr){
+
+        float sum = 0f;
+
+        for (int i = 0; i < arr.length; i++){
+            sum = sum + arr[i];
+        }
+
+        return sum / arr.length;
+    }
+
+    // Write a Java program to test if an array contains a specific value.
+
+    public boolean checkIfArrayContainsValue(int[] arr, int x){
+
+        boolean contain = false;
+
+        for (int i: arr){
+            if (i == x){
+                contain = true;
+            }
+        }
+
+        return contain;
+    }
+
+    // Write a Java program to find the index of an array element.
+
+    public void findIndexOfArrayElement(int[] arr, int x){
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] == x){
+                System.out.println(i);
+            }
+        }
+    }
+
+    //6.Write a Java program to remove a specific element from an array.
+
+    //7.Write a Java program to find the second smallest element in an array.
+
+    public void findSecondSmallestInArray(int[] arr){
+
+    }
+
+    // Write a Java program to copy an array by iterating the array
+
+    public int[] copyArray(int[] arr){
+
+        int[] arr2 = new int[arr.length];
+
+        for (int i = 0; i < arr.length; i++){
+            arr2[i] = arr[i];
+        }
+
+        return arr2; /// REVIEW
+
+    }
+
+//    9. Write a Java program to insert an element (specific position) into an array.
+//            10. Write a Java program to find the maximum and minimum value of an array.
+//        11. Write a Java program to reverse an array of integer values.
+//    12. Write a Java program to find the duplicate values of an array of integer values.
+//    13. Write a Java program to find the duplicate values of an array of string values
+//    14. Write a Java program to find the common elements between two arrays (string values).
 
 }

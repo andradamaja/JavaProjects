@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class Hamster extends Animal {
 
     //BEHAVIORS:

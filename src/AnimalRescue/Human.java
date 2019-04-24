@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class Human {
 
     private String name;
@@ -5,6 +7,15 @@ public class Human {
     private String gender;
     private float weight;
     private float height;
+    private String occupation;
+
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
 
     public String getName() {
         return name;

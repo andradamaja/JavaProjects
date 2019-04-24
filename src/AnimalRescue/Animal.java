@@ -1,7 +1,9 @@
+package AnimalRescue;
+
 public class Animal {
 
     private String name;
-    private float age;
+    private byte age;
     private float weight;
     private String color;
 
@@ -17,7 +19,7 @@ public class Animal {
         return age;
     }
 
-    public void setAge(float age) {
+    public void setAge(byte age) {
         this.age = age;
     }
 

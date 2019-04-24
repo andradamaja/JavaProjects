@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class DogOwner extends Rescuer {
 
     //BEHAVIORS:
@@ -6,11 +8,11 @@ public class DogOwner extends Rescuer {
         System.out.println("pets dog ");
     }
 
-    public void throwBall(){
-        System.out.println("throws ball ");
+    public void throwToy(){
+        System.out.println("throws toy ");
     }
 
-    public void commandFetchBall(){
+    public void commandFetch(){
         System.out.println("says: \"Fetch!\" ");
     }
 

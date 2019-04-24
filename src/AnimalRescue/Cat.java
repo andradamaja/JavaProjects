@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class Cat extends Animal {
 
     //BEHAVIORS:
@@ -28,5 +30,9 @@ public class Cat extends Animal {
 
     public void meow(){
         System.out.println("meows ");
+    }
+
+    public void chaseLight(){
+        System.out.println("chases the red light ");
     }
 }

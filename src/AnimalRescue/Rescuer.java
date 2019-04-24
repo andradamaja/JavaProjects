@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class Rescuer extends Human {
 
     //BEHAVIORS:

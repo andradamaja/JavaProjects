@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class Food {
 
     private String brand;

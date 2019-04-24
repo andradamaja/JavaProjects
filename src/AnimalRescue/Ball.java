@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class Ball extends Toy{
 
     private String type; //tennis ball, etc.

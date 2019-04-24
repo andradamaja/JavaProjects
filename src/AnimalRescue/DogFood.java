@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class DogFood extends Food{
 
     private String type; //wet or dry

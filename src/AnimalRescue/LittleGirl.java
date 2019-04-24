@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class LittleGirl extends DogOwner{
 
     //BEHAVIORS:
@@ -7,7 +9,7 @@ public class LittleGirl extends DogOwner{
     }
 
     public void hugAnimal(){
-        System.out.println("The littel girl gives her dog a hug");
+        System.out.println("The little girl gives her dog a hug");
     }
 
 

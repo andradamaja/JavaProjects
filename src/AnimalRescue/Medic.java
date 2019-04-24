@@ -1,3 +1,5 @@
+package AnimalRescue;
+
 public class Medic extends Human {
 
     private String specialization;
